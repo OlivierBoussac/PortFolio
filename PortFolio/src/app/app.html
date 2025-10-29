@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Projets</title>
+  <meta name="description" content="Section Projets d'un portfolio, mise en forme inspirée." />
+  <link rel="stylesheet" href="app.scss" />
+</head>
+<body>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Navigation principale">
+      <a href="#top" class="brand">Olivier BOUSSAC<span class="dot">.</span></a>
+      <a class="btn" href="#projects">Projets</a>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="section-intro" aria-labelledby="intro-title">
+      <p class="intro">Bienvenue dans la section Projets de mon portfolio. Vous y trouverez une sélection de projets sur lesquels j'ai travaillé, mettant en avant mes compétences en développement web et mobile, ainsi que ma capacité à résoudre des problèmes complexes grâce à des solutions innovantes.</p>
+    </section>
+
+    <section class="section-head" aria-labelledby="title-projets">
+      <h1 id="title-projets">Projets sélectionnés</h1>
+      <p class="muted">Mise en forme inspirée, contenu factice. HTML uniquement.</p>
+    </section>
+
+    <section id="projects" class="projects" aria-label="Liste des projets et aperçus">
+      <aside class="project-list" aria-label="Navigation projets">
+        <a class="project-chip" href="#p-analytics">
+          <span class="chip-dot"></span>
+          <div>
+            <div>Analytics Dashboard</div>
+            <small>2025 · Produit web</small>
+          </div>
+        </a>
+        <a class="project-chip" href="#p-commerce">
+          <span class="chip-dot" style="background: var(--accent-2)"></span>
+          <div>
+            <div>E‑commerce B2B</div>
+            <small>2024 · Plateforme</small>
+          </div>
+        </a>
+        <a class="project-chip" href="#p-mobile">
+          <span class="chip-dot" style="background: #34d399"></span>
+          <div>
+            <div>App Mobile & API</div>
+            <small>2023 · iOS/Android</small>
+          </div>
+        </a>
+        <a class="project-chip" href="#p-ml">
+          <span class="chip-dot" style="background: #f59e0b"></span>
+          <div>
+            <div>ML Anomaly Detection</div>
+            <small>2022 · Data</small>
+          </div>
+        </a>
+      </aside>
+
+      <div class="project-cards">
+        <article id="p-analytics" class="card">
+          <div class="media"><div class="mockup"></div></div>
+          <div class="content">
+            <div class="eyebrow"><span class="pill">2025</span><span>Produit web</span></div>
+            <h3>Analytics Dashboard</h3>
+            <p class="desc">Tableaux de bord temps réel, filtres avancés et partage.</p>
+            <div class="meta">
+              <span class="tag">Angular</span>
+              <span class="tag">.NET 8</span>
+              <span class="tag">WebSocket</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <a class="cta" href="#">Voir le projet</a>
+          </div>
+        </article>
+
+        <article id="p-commerce" class="card">
+          <div class="media"><div class="mockup"></div></div>
+          <div class="content">
+            <div class="eyebrow"><span class="pill">2024</span><span>Plateforme</span></div>
+            <h3>E‑commerce B2B</h3>
+            <p class="desc">Gestion de catalogues, pricing dynamique et intégration ERP.</p>
+            <div class="meta">
+              <span class="tag">Angular</span>
+              <span class="tag">.NET API</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Azure</span>
+            </div>
+            <a class="cta" href="#">Étude de cas</a>
+          </div>
+        </article>
+
+        <article id="p-mobile" class="card">
+          <div class="media"><div class="mockup"></div></div>
+          <div class="content">
+            <div class="eyebrow"><span class="pill">2023</span><span>iOS/Android</span></div>
+            <h3>App Mobile & API</h3>
+            <p class="desc">Application hybride avec synchronisation hors‑ligne.</p>
+            <div class="meta">
+              <span class="tag">Ionic</span>
+              <span class="tag">.NET 7</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">FCM/APNs</span>
+            </div>
+            <a class="cta" href="#">Détails</a>
+          </div>
+        </article>
+
+        <article id="p-ml" class="card">
+          <div class="media"><div class="mockup"></div></div>
+          <div class="content">
+            <div class="eyebrow"><span class="pill">2022</span><span>Data</span></div>
+            <h3>ML Anomaly Detection</h3>
+            <p class="desc">Détection d’anomalies sur séries temporelles.</p>
+            <div class="meta">
+              <span class="tag">Python</span>
+              <span class="tag">.NET Workers</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">TimescaleDB</span>
+            </div>
+            <a class="cta" href="#">Lire</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
