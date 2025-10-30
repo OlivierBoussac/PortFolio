@@ -6,123 +6,257 @@
   <title>Portfolio – Projets</title>
   <meta name="description" content="Section Projets d'un portfolio, mise en forme inspirée." />
   <link rel="stylesheet" href="app.scss" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="container nav" role="navigation" aria-label="Navigation principale">
       <a href="#top" class="brand">Olivier BOUSSAC<span class="dot">.</span></a>
-      <a class="btn" href="#projects">Projets</a>
+      <a class="btn" href="#aPropos">A PROPOS</a>
+      <a class="btn" href="#experiences">EXPERIENCES</a>
+      <a class="btn" href="#competences">COMPETENCES</a>
+      <a class="btn" href="#projects">PROJETS</a>
+      <a class="btn" href="#contact">CONTACTS</a>
     </div>
   </header>
 
+  <section id="hero" class="section-hero">
+    <p class="intro">
+      Bienvenue sur le Portfolio d’Olivier BOUSSAC, développeur Full-Stack spécialisé en .NET et Angular.
+    </p>
+  </section>
+
   <main id="top" class="container">
-    <section class="section-intro" aria-labelledby="intro-title">
-      <p class="intro">Bienvenue dans la section Projets de mon portfolio. Vous y trouverez une sélection de projets sur lesquels j'ai travaillé, mettant en avant mes compétences en développement web et mobile, ainsi que ma capacité à résoudre des problèmes complexes grâce à des solutions innovantes.</p>
+    <section id="aPropos" class="section-head">
+      <h1>À propos</h1>
+      <p>
+        Olivier Boussac. Développeur Back-end. Expérience depuis 2021. Spécialisation .NET, Entity Framework, Angular et Java.
+      </p>
+      <p>
+        Expertise en conception d’applications web et mobiles. Intérêt pour les architectures robustes et les outils de productivité.
+      </p>
+      <div class="lang-row">
+        <div class="lang-item">
+          <span>Français : natif</span>
+        </div>
+
+        <div class="lang-item">
+          <span>Anglais : niveau B2 (TOEIC 810)</span>
+        </div>
+      </div>
+      <div class="download-row">
+        <a class="download-item" href="CV Olivier BOUSSAC V3-5.pdf" download>
+          <span class="material-icons">description</span>
+          <p>CV</p>
+        </a>
+
+        <a class="download-item" href="Olivier-BOUSSAC-Développeur Full Stack.pdf" download>
+          <span class="material-icons">description</span>
+          <p>CV Etendu</p>
+        </a>
+      </div>
     </section>
 
-    <section class="section-head" aria-labelledby="title-projets">
-      <h1 id="title-projets">Projets sélectionnés</h1>
-      <p class="muted">Mise en forme inspirée, contenu factice. HTML uniquement.</p>
+    <section id="experiences" class="section-head">
+      <h1>Expériences</h1>
+      <article>
+        <h3>Développeur Back-End – SenDOC</h3>
+        <small>Avr. 2025 − Nov. 2025</small>
+        <p>
+          Mission centrée sur la conception de systèmes internes en .NET. Mise en place d’un système d’emailing, d’un module de facturation électronique FacturX et d’une migration FTP vers SFTP. Développement de composants réutilisables et outils internes.
+        </p>
+      </article>
+      <article>
+        <h3>Développeur Full Stack – Talan</h3>
+        <small>Nov. 2023 − Mai 2024</small>
+        <p>
+          Mission orientée modernisation applicative. Conception et intégration d’un système d’emailing et d’un module de facturation électronique. Réalisations de migrations Angular et .NET avec réduction de dette technique et stabilisation post-refonte.
+        </p>
+      </article>
+      <article>
+        <h3>Développeur Full Stack – Air France</h3>
+        <small>Sept. 2021 − Sept. 2023</small>
+        <p>
+          Mission sur le portail SOA Repo et sur l’application Wallet Flying Blue. Développement de pages fonctionnelles, refontes UI, optimisation des performances et mises à jour des dépendances. Contribution aux migrations Angular et .NET et rédaction de documentation technique.
+        </p>
+      </article>
     </section>
 
-    <section id="projects" class="projects" aria-label="Liste des projets et aperçus">
+    <section id="competences" class="section-head">
+      <h1>Compétences</h1>
+
+      <div class="skills">
+        <div class="skills-row">
+          <div class="skills-label">Frameworks</div>
+          <div class="skills-tags">
+            <span class="tag">Angular</span>
+            <span class="tag">.NET 6/7/8</span>
+            <span class="tag">Entity Framework</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <div class="skills-label">Langages</div>
+          <div class="skills-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">C#</span>
+            <span class="tag">Java</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">HTML</span>
+            <span class="tag">SCSS/CSS</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <div class="skills-label">Logiciels</div>
+          <div class="skills-tags">
+            <span class="tag">VS Code</span>
+            <span class="tag">Suite JetBrains</span>
+            <span class="tag">Unity</span>
+            <span class="tag">Blender</span>
+            <span class="tag">Android Studio</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Swagger</span>
+            <span class="tag">Redmine</span>
+            <span class="tag">Azure</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <div class="skills-label">Méthodes</div>
+          <div class="skills-tags">
+            <span class="tag">Agile / Scrum</span>
+            <span class="tag">Cycle en V</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-head" aria-labelledby="title-projets">
+      <h1 id="title-projets">Projets Personels</h1>
+    </section>
+
+    <section class="projects" aria-label="Liste des projets et aperçus">
       <aside class="project-list" aria-label="Navigation projets">
-        <a class="project-chip" href="#p-analytics">
+        <a class="project-chip" href="#extension-git-flow">
           <span class="chip-dot"></span>
           <div>
-            <div>Analytics Dashboard</div>
-            <small>2025 · Produit web</small>
+            <div>Git Flow</div>
+            <small>2025 · Extension</small>
           </div>
         </a>
-        <a class="project-chip" href="#p-commerce">
+        <a class="project-chip" href="#dart">
           <span class="chip-dot" style="background: var(--accent-2)"></span>
           <div>
-            <div>E‑commerce B2B</div>
-            <small>2024 · Plateforme</small>
+            <div>Dart</div>
+            <small>2024 · Application mobile</small>
           </div>
         </a>
-        <a class="project-chip" href="#p-mobile">
+        <a class="project-chip" href="#site-scan">
           <span class="chip-dot" style="background: #34d399"></span>
           <div>
-            <div>App Mobile & API</div>
-            <small>2023 · iOS/Android</small>
+            <div>Site de scan de mangas</div>
+            <small>2024 · Application WEB</small>
           </div>
         </a>
-        <a class="project-chip" href="#p-ml">
+        <a class="project-chip" href="#rv-project">
           <span class="chip-dot" style="background: #f59e0b"></span>
           <div>
-            <div>ML Anomaly Detection</div>
-            <small>2022 · Data</small>
+            <div>Simulateur de restaurations</div>
+            <small>2023 · Application en Réalité Virtuelle</small>
           </div>
         </a>
       </aside>
 
       <div class="project-cards">
-        <article id="p-analytics" class="card">
-          <div class="media"><div class="mockup"></div></div>
+        <article id="extension-git-flow" class="card">
+          <div class="media">
+            <img src="image_gitflow.png" class="mockup-img" alt="aperçu projet" />
+          </div>             
           <div class="content">
-            <div class="eyebrow"><span class="pill">2025</span><span>Produit web</span></div>
-            <h3>Analytics Dashboard</h3>
-            <p class="desc">Tableaux de bord temps réel, filtres avancés et partage.</p>
+            <div class="eyebrow"><span class="pill">2025</span><span>Extension</span></div>
+            <h3>Git Flow</h3>
+            <p class="desc">Extension Visual Studio permetant l'usage de commande git flow.</p>
+            <div class="meta">
+              <span class="tag">Node.JS</span>
+              <span class="tag">HTML</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+        <article id="dart" class="card">
+          <div class="media">
+            <img src="image_dart.png" class="mockup-img" alt="aperçu projet" />
+          </div>             
+          <div class="content">
+            <div class="eyebrow"><span class="pill">2024</span><span>Application mobile</span></div>
+            <h3>Dart</h3>
+            <p class="desc">Application mobile Android qui permet de compter les scores aux fléchettes.</p>
+            <div class="meta">             
+              <span class="tag">Android Studio</span>
+              <span class="tag">Kotlin</span>
+              <span class="tag">Java</span>
+            </div>
+          </div>
+        </article>
+
+        <article id="site-scan" class="card">
+          <div class="media">
+            <img src="image_pss.png" class="mockup-img" alt="aperçu projet" />
+          </div>   
+            <div class="content">
+            <div class="eyebrow"><span class="pill">2024</span><span>Application WEB</span></div>
+            <h3>Site de lecteur de Mangas</h3>
+            <p class="desc">Site qui permet de lire des scans de Mangas gratuitement et sans pub.</p>
             <div class="meta">
               <span class="tag">Angular</span>
-              <span class="tag">.NET 8</span>
-              <span class="tag">WebSocket</span>
-              <span class="tag">PostgreSQL</span>
+              <span class="tag">HTML</span>
+              <span class="tag">SCSS</span>
+              <span class="tag">TypeScript</span>
             </div>
-            <a class="cta" href="#">Voir le projet</a>
           </div>
         </article>
 
-        <article id="p-commerce" class="card">
-          <div class="media"><div class="mockup"></div></div>
+        <article id="rv-project" class="card">
+          <div class="media">
+            <img src="image_RV.png" class="mockup-img" alt="aperçu projet" />
+          </div>          
           <div class="content">
-            <div class="eyebrow"><span class="pill">2024</span><span>Plateforme</span></div>
-            <h3>E‑commerce B2B</h3>
-            <p class="desc">Gestion de catalogues, pricing dynamique et intégration ERP.</p>
+            <div class="eyebrow"><span class="pill">2023</span><span>Application en Réalité Virtuelle</span></div>
+            <h3>Simulateur de restaurations</h3>
+            <p class="desc">Création d'un restaurant universitaire en dans un monde virtuelle avec toute les intéractions possibl</p>
             <div class="meta">
-              <span class="tag">Angular</span>
-              <span class="tag">.NET API</span>
-              <span class="tag">Redis</span>
-              <span class="tag">Azure</span>
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">Blender</span>
             </div>
-            <a class="cta" href="#">Étude de cas</a>
-          </div>
-        </article>
-
-        <article id="p-mobile" class="card">
-          <div class="media"><div class="mockup"></div></div>
-          <div class="content">
-            <div class="eyebrow"><span class="pill">2023</span><span>iOS/Android</span></div>
-            <h3>App Mobile & API</h3>
-            <p class="desc">Application hybride avec synchronisation hors‑ligne.</p>
-            <div class="meta">
-              <span class="tag">Ionic</span>
-              <span class="tag">.NET 7</span>
-              <span class="tag">SQLite</span>
-              <span class="tag">FCM/APNs</span>
-            </div>
-            <a class="cta" href="#">Détails</a>
-          </div>
-        </article>
-
-        <article id="p-ml" class="card">
-          <div class="media"><div class="mockup"></div></div>
-          <div class="content">
-            <div class="eyebrow"><span class="pill">2022</span><span>Data</span></div>
-            <h3>ML Anomaly Detection</h3>
-            <p class="desc">Détection d’anomalies sur séries temporelles.</p>
-            <div class="meta">
-              <span class="tag">Python</span>
-              <span class="tag">.NET Workers</span>
-              <span class="tag">Kafka</span>
-              <span class="tag">TimescaleDB</span>
-            </div>
-            <a class="cta" href="#">Lire</a>
           </div>
         </article>
       </div>
     </section>
   </main>
+  <section id="contact" class="contact-full">
+    <h1>Contact</h1>
+
+    <div class="contact-line">
+      <span class="material-icons">email</span>
+      <p>olboussac@gmail.com</p>
+    </div>
+
+    <div class="contact-line">
+      <span class="material-icons">call</span>
+      <p>07 81 07 41 70</p>
+    </div>
+
+    <a class="contact-line" href="https://www.linkedin.com/in/olivier-boussac" target="_blank">
+      <img src="linkdin.png" alt="LinkedIn" class="linkedin-icon" />
+      <p>LinkedIn</p>
+    </a>
+  </section>
 </body>
 </html>
