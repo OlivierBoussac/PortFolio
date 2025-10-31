@@ -11,7 +11,10 @@
 <body>
   <header>
     <div class="container nav" role="navigation" aria-label="Navigation principale">
-      <a href="#top" class="brand">Olivier BOUSSAC<span class="dot">.</span></a>
+      <a href="#top" class="brand">
+        <img src="moi.png" class="avatar" alt="photo" />
+        Olivier BOUSSAC<span class="dot">.</span>
+      </a>
       <a class="btn" href="#aPropos">A PROPOS</a>
       <a class="btn" href="#experiences">EXPERIENCES</a>
       <a class="btn" href="#competences">COMPETENCES</a>
@@ -22,19 +25,25 @@
 
   <section id="hero" class="section-hero">
     <p class="intro">
-      Bienvenue sur le Portfolio d’Olivier BOUSSAC, développeur Full-Stack spécialisé en .NET et Angular.
+      Bienvenue sur le Portfolio d’Olivier BOUSSAC,<br>
+      <span class="intro-light">développeur Full-Stack spécialisé en .NET et Angular.</span>
     </p>
   </section>
 
   <main id="top" class="container">
     <section id="aPropos" class="section-head">
       <h1>À propos</h1>
-      <p>
-        Olivier Boussac. Développeur Back-end. Expérience depuis 2021. Spécialisation .NET, Entity Framework, Angular et Java.
-      </p>
-      <p>
-        Expertise en conception d’applications web et mobiles. Intérêt pour les architectures robustes et les outils de productivité.
-      </p>
+        <p>
+          Olivier Boussac. Développeur Back-end depuis 2021. Spécialisé en .NET, Entity Framework, Angular et Java. Habitué aux environnements techniques exigeants et aux cycles de livraison courts.
+        </p>
+
+        <p>
+          Expertise en conception d’applications web et mobiles, intégration d’API, optimisation de performances et industrialisation des processus. Intérêt marqué pour les architectures propres, la qualité de code et les outils qui améliorent la productivité.
+        </p>
+
+        <p>
+          Je recherche un poste qui me permette de continuer à progresser sur des technologies modernes, d’échanger avec des équipes expérimentées et de contribuer à des projets à forte valeur. Motivation pour la montée en compétence continue et l’amélioration des pratiques de développement.
+        </p>
       <div class="lang-row">
         <div class="lang-item">
           <span>Français : natif</span>
@@ -62,23 +71,23 @@
       <article>
         <h3>Développeur Back-End – SenDOC</h3>
         <small>Avr. 2025 − Nov. 2025</small>
-        <p>
-          Mission centrée sur la conception de systèmes internes en .NET. Mise en place d’un système d’emailing, d’un module de facturation électronique FacturX et d’une migration FTP vers SFTP. Développement de composants réutilisables et outils internes.
-        </p>
+          <p>
+            Conception et évolution de modules internes en .NET. Mise en place d’un système d’emailing complet, depuis l’étude des prestataires jusqu’à la création d’API dédiées et à la structuration des données. Réalisation d’un module de facturation électronique FacturX avec conversion, validation et tests unitaires. Refonte du système de transfert de fichiers en migrant de FTP vers SFTP au moyen d’un NuGet dédié.
+          </p>
       </article>
       <article>
         <h3>Développeur Full Stack – Talan</h3>
         <small>Nov. 2023 − Mai 2024</small>
-        <p>
-          Mission orientée modernisation applicative. Conception et intégration d’un système d’emailing et d’un module de facturation électronique. Réalisations de migrations Angular et .NET avec réduction de dette technique et stabilisation post-refonte.
-        </p>
+          <p>
+            Participation à des projets de modernisation applicative et à la création d’expériences en réalité augmentée. Conception de spécifications, production de wireframes et documentation projet. Initialisation d’une application en AR en respectant les contraintes de design et de parcours utilisateur. Réalisation de migrations techniques sur Angular et .NET avec mise à jour des dépendances, correction d’anomalies et stabilisation post-migration.
+          </p>
       </article>
       <article>
         <h3>Développeur Full Stack – Air France</h3>
         <small>Sept. 2021 − Sept. 2023</small>
-        <p>
-          Mission sur le portail SOA Repo et sur l’application Wallet Flying Blue. Développement de pages fonctionnelles, refontes UI, optimisation des performances et mises à jour des dépendances. Contribution aux migrations Angular et .NET et rédaction de documentation technique.
-        </p>
+          <p>
+            Travail sur deux projets majeurs. Sur SOA Repo : refonte complète du portail, création de pages fonctionnelles Angular, optimisation du chargement, intégration d’un module de recherche et mise en conformité du design. Sur Wallet Flying Blue : évolutions fonctionnelles, corrections post-réactivation, mises à jour des dépendances, création d’un service de personnalisation des cartes et rédaction des tests unitaires. Présentations et documentation en anglais.
+          </p>
       </article>
     </section>
 
@@ -137,7 +146,7 @@
     </section>
 
     <section id="projects" class="section-head" aria-labelledby="title-projets">
-      <h1 id="title-projets">Projets Personels</h1>
+      <h1 id="title-projets">Projets</h1>
     </section>
 
     <section class="projects" aria-label="Liste des projets et aperçus">
@@ -211,7 +220,7 @@
           </div>   
             <div class="content">
             <div class="eyebrow"><span class="pill">2024</span><span>Application WEB</span></div>
-            <h3>Site de lecteur de Mangas</h3>
+            <h3>Site de lecture de Mangas</h3>
             <p class="desc">Site qui permet de lire des scans de Mangas gratuitement et sans pub.</p>
             <div class="meta">
               <span class="tag">Angular</span>
@@ -221,7 +230,7 @@
             </div>
           </div>
         </article>
-
+        
         <article id="rv-project" class="card">
           <div class="media">
             <img src="image_RV.png" class="mockup-img" alt="aperçu projet" />
@@ -243,10 +252,10 @@
   <section id="contact" class="contact-full">
     <h1>Contact</h1>
 
-    <div class="contact-line">
+    <a class="contact-line" href="mailto:olboussac@gmail.com">
       <span class="material-icons">email</span>
       <p>olboussac@gmail.com</p>
-    </div>
+    </a>
 
     <div class="contact-line">
       <span class="material-icons">call</span>

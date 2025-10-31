@@ -191,6 +191,22 @@ h3 { margin: 10px 0; font-size: 22px; }
   padding: 0 20px;
   scroll-margin-top: var(--header-h);
 }
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+.intro-light {
+  font-weight: 400;
+  font-size: clamp(20px, 3vw, 38px);
+}
+
 .section-hero .intro {
   font-size: clamp(28px, 4vw, 46px);
   font-weight: 700;
@@ -301,6 +317,15 @@ h3 { margin: 10px 0; font-size: 22px; }
 .contact-full h1 {
   margin-bottom: 40px;
   font-size: 34px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 16px); /* ajuste la marge */
+}
+
+[id] {
+  scroll-margin-top: calc(var(--header-h) + 16px);
 }
 
 .contact-line {
