@@ -58,7 +58,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: var(--bg-soft);
+  background: #035b86; /* Bleu océan */
   border-bottom: 1px solid var(--border);
 }
 
@@ -69,16 +69,29 @@ header {
   height: var(--header-h);
 }
 
-.brand { font-weight: 700; }
+.brand {
+  color: #ffffff; /* blanc */
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
 .brand .dot { color: var(--accent); }
 
 .btn {
+  color: #ffffff;               /* texte blanc */
+  border: 1px solid #ffffff;    /* contour blanc */
+  background: transparent;      /* fond transparent */
   padding: 10px 14px;
-  border: 1px solid var(--border);
   border-radius: 999px;
   transition: var(--transition);
 }
-.btn:hover { transform: translateY(-2px); background: var(--bg-soft); }
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.15); /* léger fond blanc translucide au survol */
+  color: #ffffff;
+}
 
 /* ====== Section titre ====== */
 .section-head { padding: 56px 0 24px; }
@@ -168,7 +181,7 @@ h3 { margin: 10px 0; font-size: 22px; }
 .meta { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag {
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 15px;
   border: 1px solid var(--border);
   border-radius: 999px;
   color: var(--muted);
@@ -307,7 +320,7 @@ h3 { margin: 10px 0; font-size: 22px; }
 /* ===== SECTION CONTACT FULL WIDTH ===== */
 .contact-full {
   width: 100%;
-  padding: 60px 20px;
+  padding: 20px 20px;
   background: #035b86; /* Bleu océan */
   color: white;
   text-align: center;
@@ -317,6 +330,52 @@ h3 { margin: 10px 0; font-size: 22px; }
 .contact-full h1 {
   margin-bottom: 40px;
   font-size: 34px;
+}
+
+.contact-lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px; /* espace entre les éléments */
+  flex-wrap: wrap; /* s'adapte si écran trop petit */
+  margin-top: 20px;
+}
+
+/* Chaque ligne de contact */
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.contact-line .material-icons {
+  font-size: 34px;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.linkedin-icon {
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.contact-line p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-line:hover {
+  transform: translateY(-3px);
+  color: #bde7ff;
 }
 
 html {
