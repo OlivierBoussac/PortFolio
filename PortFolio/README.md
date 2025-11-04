@@ -1,3 +1,8 @@
+# Server
+
+## connection ssh
+ssh ubuntu@51.178.39.105
+
 # Local
 
 ## compilation du code
